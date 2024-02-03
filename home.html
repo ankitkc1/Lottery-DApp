@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sepolia Ether Lottery</h1>
+            <p>Contract Balance: <span id="contractBalance"></span> wei</p>
+        </header>
+        <main>
+            <button id="enter" onclick="enterLottery()">Enter Lottery (0.2 ETH)</button>
+            <h2>Current Participants</h2>
+            <ul id="participantsList" class="participants-list"></ul>
+            <p>Last Lottery Winner: <span id="lastWinner"></span></p>
+        </main>
+    </div>
+    <div class="container">
+        <header> 
+            <h3>Points to be Considerd</h3>
+        </header>
+        <list>
+            <li>When you click "Enter Lottery" your metamask account popsout asking for 0.2 Ether</li>
+            <li>When 5 Participant reached winner is automattically chosen randomly</li>
+            <li>0.8 Ether is sent to Winner and 0.2 to Owner account </li>
+        </list>
+        <p> As you may know, our current faucet provides 0.5 Ether per day, which, while helpful, falls short of meeting the needs of our dedicated developers and researchers.
+            <br>
+            To bridge this gap, we are reaching out for support. By contributing just 0.2 Ether, you not only aid in sustaining our crucial work but also stand a chance to win 0.8 Ether in our lottery!
+         </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <script src="contract.js"></script>
+</body>
+</html>
